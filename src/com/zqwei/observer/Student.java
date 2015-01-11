@@ -2,6 +2,10 @@ package com.zqwei.observer;
 
 public class Student implements MyObserver{
 
+	static {
+		int i = 0;
+		System.out.println(i);
+	}
 	private Teacher teacher;
 	private String name; 
 	public Student(String name,Teacher teacher) {
